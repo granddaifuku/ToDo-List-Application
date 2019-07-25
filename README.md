@@ -10,7 +10,7 @@ Spring Boot や java に関する知識が不足していたため, YouTube http
 MVC モデルに基づいて作成しており, コントローラでユーザからの処理を受け付け, その処理をモデルに渡して行います.  ビューで処理結果の表示を行なっています.
 レイヤは main, controller, service, service implements, repository, model, view で分けました.  main レイヤではアプリケーションの実行を, controller レイヤではユーザからのリクエストを受け付けます.  service レイヤでは扱うメソッドの宣言を, service implements レイヤでは service レイヤ内で宣言したメソッドの処理内容を記述しています.  repository レイヤでは JPA にて用意されているデータの CRUD に必要なメソッドを使用できるように extends CrudRepository を行なっています.  model レイヤでは主にデータの格納を, view レイヤでは html を用いて表示する画面の作成を行なっています.
 
-また, ToDo の検索メソッドを期限内に作成できませんでした.  さらに ToDo を登録する画面はあるのですが, save しようとすると以下のようなエラーが発生し, データベースへの登録ができていない状況です. 
+また, ToDo の検索メソッド, ToDo の状態(達成済み, 未達成)を期限内に作成できませんでした.  さらに ToDo を登録する画面はあるのですが, save しようとすると以下のようなエラーが発生し, データベースへの登録ができていない状況です. 
 ```
 This application has no explicit mapping for /error, so you are seeing this as a fallback.
 
